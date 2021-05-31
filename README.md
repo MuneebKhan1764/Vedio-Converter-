@@ -74,11 +74,13 @@ if (type=="y"):
   with youtube_dl.YoutubeDL(ydl_opts) as ydl:
        ydl.download([link])
 
-with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-    ydl.download([link])
+
 ```
 
 For Mp4    
+
+
+
 elif(type!="y"):
      print("For Mp4 format")
      print("Insert the link for Mp4")
