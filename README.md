@@ -59,18 +59,35 @@ import youtube_dl
 print("Insert the link")
 link = input ("")
 
-ydl_opts = {
+if (type=="y"):
+  print("Insert the link for Mp3")
+  link = input ("")
+  ydl_opts = {
     'format': 'bestaudio/best',
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
         'preferredcodec': 'mp3',
         'preferredquality': '320',
     }],
-}
+  }
+
+  with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+       ydl.download([link])
 
 with youtube_dl.YoutubeDL(ydl_opts) as ydl:
     ydl.download([link])
 ```
 
-For Mp4 
-
+For Mp4    
+elif(type!="y"):
+     print("For Mp4 format")
+     print("Insert the link for Mp4")
+     link = input ("")
+     ydl_opts = {
+    'format': 'mp4'
+   
+   }
+     
+     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+          ydl.download([link])
+          print("Task Successful Done...!")
