@@ -26,7 +26,7 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog 
 ```
-![alt text](https://i.ibb.co/Y2GqT3Q/Cattura.png)
+
 
 ## YTDL Options
 We need to specify all the options for the video, like the quality, the codec, etc...  
