@@ -82,9 +82,7 @@ For Mp4
 
 
 elif(type!="y"):
-     print("For Mp4 format")
-     print("Insert the link for Mp4")
-     link = input ("")
+     
      ydl_opts = {
     'format': 'mp4'
    
