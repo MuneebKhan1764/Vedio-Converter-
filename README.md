@@ -18,7 +18,7 @@ ffmpeg will convert them to mp3
 
 ## Setup
 In the first part of the code, we will need to import unicode_literals from __future__ and import youtube_dl and tkinter for GUI
-We want to make the person using the tool to choose the youtube video's link directly in the console, and not in the code, we will make that by declaring a variable named link, which will take the user's input when the tool is runned.
+We want to make the person using the tool to choose the youtube video's link directly in the console, and not in the code, we will make that by declaring a variable named url and choices, which will take the user's input when the tool is runned.
 ```python
 from __future__ import unicode_literals
 import youtube_dl
